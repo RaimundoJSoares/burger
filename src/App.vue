@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Navbar logo='logo_src' :alt="app_name"/>
+  <Navbar :logo="logo_src" :alt="app_name"/>
   <router-view/>
   <Footer />
  </div> 
@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      logo_src: "img/logo.png",
+      logo_src: "/img/logo.png",
       app_name : "Make your Burger"
     }
   }
